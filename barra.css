@@ -1,0 +1,205 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(img/fundo.jpg);
+    background-position: center top;
+    background-position: fixed;
+    width: 100%;
+    height: 100vh;
+    min-height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    flex: 1 1 100vw;
+    overflow: hidden;
+}
+
+header, nav, main, footer{
+    display: flex;
+    margin: 3px;
+    cursor: default;
+    
+}
+header #logo{
+    width: 100px;
+    flex: 0 1 180px;
+}
+header{
+    flex: 1 1 100vw;
+    order: 0;
+}
+nav{
+    flex: 1 1 100vw;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+main{
+    flex: 20 1 500px;
+    height: calc(100vh - 158px);
+    flex-wrap: wrap;
+    overflow: auto;
+    order: 1;
+}
+footer{
+    flex: 1 1 100vw;
+    height: 100px;
+    order: 2;
+}
+#iconeuser{
+    width: 20px;
+    margin: 10px;
+    margin-top: 15px;
+}
+.puts{
+    align-items: self-end;
+    border: 2px solid black;
+    border-radius: 15px;
+    
+    height: 35px;
+    background: black;
+    color: aliceblue;
+}
+::placeholder{
+    color: rgb(228, 195, 5);
+    text-align: center;
+}
+.but{
+        cursor: pointer;
+        color: rgb(228, 195, 5);
+        background: black;
+        margin:  5px 0 0 0 ;
+        border: 2px solid black;
+        border-radius: 15px;
+      
+        height: 35px;
+    
+}
+/* Atribuindo funções para o menu*/
+
+@media only screen and (max-width: 700px) {
+
+    nav{
+        transition: 1s;
+        position: fixed;
+        flex-direction: column;
+        justify-content: flex-end;
+        margin: 2px 0 0 183px;
+    }
+   
+    
+}
+/* Atribuindo A segunda funçãos para o menu - nav*/
+
+/* Botão de inicio de sessão */
+#openMenu, #closeMenu{
+    border: none;
+    color: yellowgreen;
+    background: none;
+    font-size: 15px;
+    font-weight: bold;/* expressura */
+    padding: 0px 5px 0px 5px;
+    cursor: pointer;
+    display: none;
+ 
+
+}
+/* Estilizando os Inputs */
+
+input{
+    background-color: black;
+    color: aliceblue;
+    border: solid;
+    border-radius: 8px ;
+    padding: 3px;
+}
+@media only screen and (max-width: 698px) {
+    
+    #putss{
+        break-after:avoid-column;
+    }
+    #openMenu, #closeMenu{
+        display: block;
+    }
+    #openMenu{
+        margin-left: auto;
+    }
+    #closeMenu{
+        position: fixed;
+        right: 15px;
+        top: 15px;
+    }
+    /* Podemos mantera barra de menu fixa com essa função! */
+    nav{
+        margin: 2px 0 0 183px;
+        position: fixed;
+        flex-direction: column;
+        width: 100vw;
+        height: 100vh;
+        background: rgb(255, 255, 255, 0.8);
+        /* Para centralizar directamento o conteudo fixo */
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        display: none;
+        opacity: 0;
+        transition: 0.3s;
+    }
+    #iconeuser{
+        position: fixed;
+        top: 100px;
+        width: 50px;
+        margin: 10px;
+        margin-top: 15px;
+    }
+}
+#putss{
+    text-decoration: none;
+    background-color: black;
+    cursor: pointer;
+    color: rgb(228, 195, 5);
+    border-radius: 35px;
+    padding:  7px 8px 10px 8px; 
+}
+@media only screen and (max-width: 497px){
+    #putss{
+        text-decoration: none;
+        background-color: black;
+        cursor: pointer;
+        color: rgb(228, 195, 5);
+        border-radius: 35px;
+        padding:  7px 8px 10px 8px; 
+    }
+    @media only screen and (max-width: 497px) {
+        form{
+            position: absolute;
+            
+            width: 320px;
+            height: 150px;
+        }
+        #pu{
+            position: absolute;
+            top:85px;
+            left: 80px;
+            align-items: center;
+        }
+        #ed{
+            position: absolute;
+            left: 50px;
+        }
+        #de{
+            position: absolute;
+            top: 50px;
+            left: 50px;
+        }
+        #putss{
+            position: absolute;
+            top:80px;
+            left: 134px;
+            align-items: center;
+        }
+    }
+}
+

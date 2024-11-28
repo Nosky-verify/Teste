@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(colege/fundo.jpg);
+    background-position: center top;
+    background-position: fixed;
+    width: 100%;
+    height: 100vh;
+    min-height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    flex: 1 1 100vw;
+    overflow: hidden;
+}
+header, main{
+    display: flex;
+}
+#logo{
+    width: 100px;
+    flex: 0 1 180px;
+}
+header{
+    flex: 1 1 100vw;
+    order: 0;
+}
+main{
+    flex: 1 1 100vw;
+    order: 1;
+    border: solid greenyellow;
+}
+form{
+    border: solid blue;
+}
